@@ -1,0 +1,28 @@
+#from numpy import array
+import nltk
+from nltk import word_tokenize
+def load_doc(filename):
+    # open the file as read only
+    file = open(filename, mode='rt', encoding='utf-8')
+    # read all text
+    text = file.read()
+    # close the file
+    file.close()
+    return text
+def equlizer(mom , vov):
+    tomo = []
+    hopt = []
+    tiko = []
+    biko = []
+    dop = word_tokenize(mom)
+    gop = word_tokenize(vov)
+    for wor in dop:
+        tomo.append(wor)
+    for wor in gop:
+        hopt.append(wor)
+    if (tomo[0] != hopt[0]):
+        print(tomo[0] , hopt[0])
+        print(mom , vov)
+ def to_lines(doc):
+    lines = doc.strip().split('\n')
+    return lines
