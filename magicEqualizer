@@ -26,3 +26,4 @@ def equlizer(mom , vov):
  def to_lines(doc):
     lines = doc.strip().split('\n')
     return lines
+this is newly added
